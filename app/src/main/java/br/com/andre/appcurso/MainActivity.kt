@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.constraint_activity)
 
-        Picasso.get()
-            .load("https://images.discerningassets.com/image/upload/c_fit,h_1000,w_1000/c_fit,fl_relative,h_1.0,o_100,w_1.0/v1529691019/Cinderella_s_Castle_at_Night_1_xndmux.jpg")
-            .into(imageView)
+//        Picasso.get()
+//            .load("https://images.discerningassets.com/image/upload/c_fit,h_1000,w_1000/c_fit,fl_relative,h_1.0,o_100,w_1.0/v1529691019/Cinderella_s_Castle_at_Night_1_xndmux.jpg")
+//            .into(imageView)
     }
 
     override fun onStart() {
@@ -30,6 +30,16 @@ class MainActivity : AppCompatActivity() {
     override fun onRestart() {
         super.onRestart()
         toastTest("RESTARTing")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        toastTest("RESUME: Voltando!")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        toastTest("2 ALTOS! PAUSE!")
     }
 
     override fun onStop() {

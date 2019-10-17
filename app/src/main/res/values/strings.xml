@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">AppCurso</string>
+    <string name="app_name">IMC Calc</string>
+    <string name="tituloCalculadora">Calculadora IMC</string>
+    <string name="botaoCalcular">Calcular!</string>
+    <string name="botaoLimpar">Limpar</string>
+
+
 </resources>
