@@ -3,6 +3,7 @@
     <string name="tituloCalculadora">Calculadora IMC</string>
     <string name="botaoCalcular">Calcular!</string>
     <string name="botaoLimpar">Limpar</string>
-
+    <string name="welcome">Vamos calcular o seu IMC?</string>
+    <string name="botaoVamos">Vamos lá!</string>
 
 </resources>

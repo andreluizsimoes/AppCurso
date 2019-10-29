@@ -9,7 +9,7 @@
     android:gravity="center">
 
     <TextView
-        android:id="@+id/tituloID"
+        android:id="@+id/tituloTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -29,24 +29,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/branco"
-        android:ems="6"
+        android:ems="7"
         android:fontFamily="@font/montserrat"
-        android:hint="Seu peso"
-        android:inputType="number"
+        android:hint="Seu peso (kg)"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="@color/branco"
         android:textColorHint="@color/brancoTransparente"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloID" />
+        app:layout_constraintTop_toBottomOf="@+id/tituloTXT" />
 
     <View
-        android:id="@+id/divisaoID"
+        android:id="@+id/divisaoView"
         android:layout_width="280dp"
         android:layout_height="4dp"
         android:layout_marginTop="30dp"
-        android:background="#FFFFFF"
+        android:background="@color/branco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pesoEDTX" />
@@ -58,17 +58,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/branco"
-        android:ems="6"
+        android:ems="7"
         android:fontFamily="@font/montserrat"
-        android:hint="Sua altura"
-        android:inputType="number"
+        android:hint="Sua altura (m)"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textColor="@color/branco"
         android:textColorHint="@color/brancoTransparente"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divisaoID" />
+        app:layout_constraintTop_toBottomOf="@+id/divisaoView" />
 
     <TextView
         android:id="@+id/aoQuadradoTXT"
@@ -78,11 +78,10 @@
         android:layout_marginTop="5dp"
         android:text="2"
         android:textColor="@color/branco"
-
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/alturaEDTX"
-        app:layout_constraintTop_toBottomOf="@id/divisaoID"
+        app:layout_constraintTop_toBottomOf="@id/divisaoView"
         tools:layout_editor_absoluteY="436dp" />
 
     <Button
@@ -125,5 +124,19 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/alturaEDTX" />
+
+    <TextView
+        android:id="@+id/resultadoTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat"
+        tools:text="Resultado"
+        android:textColor="@color/branco"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcularBTN" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
